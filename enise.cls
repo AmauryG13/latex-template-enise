@@ -7,7 +7,7 @@
 % plus le fichier de style pour les pages administratives
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{enise}[2018/08/21 Classe ENISE pour la rédaction]
+\ProvidesClass{enise}[2018/08/21 Classe pour la redaction]
 
 %% Packages
 \RequirePackage{kvoptions}
