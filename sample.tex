@@ -1,0 +1,129 @@
+% !TeX spellcheck = fr_FR
+% !TeX encoding = ISO-8859-1
+\documentclass[
+	print=false,
+	style=master,
+	industriel=false
+]{enise}
+
+\begin{document}
+ 
+% ==================================================================
+% RENSEIGNEMENTS SUR LA THÈSE
+% Auteur
+\author{Etudiant}
+
+% Titre
+\titleFR{Titre}
+\titleEN{Title}
+\abstractFR{Résumé}
+\abstractEN{Abstract}
+\keywordsFR{Mots, clefs}
+\keywordsEN{Keywords}
+
+% Soutenance
+\soutenance{13 septembe 2018}
+ 
+% Diplome
+\diplome{Master}
+\mention{Mécanique}
+\parcours{Biomécanique}
+
+% Université
+\universite{Ecole Nationale d'Ingénieurs de Saint - Etienne}
+\uadresse{58 Rue Jean Pavot, Saint Etienne}
+
+% Laboratoire
+\laboratoire{Laboratoire de Tribologie et Dynamique des Systèmes}
+\lecole{Ecole Centrale de Lyon}
+\lbat{Technologie des Surfaces : H10}
+\ladresse{36 Avenue Guy de Collongue, ECULLY}
+
+% Autres
+\encadrants{
+	\begin{tabular}{lll}
+		P\up{r} & Zahouani   & Encadrant  \\
+		P\up{r} & Feulvarech & Encadrant
+	\end{tabular}
+}
+
+\jury{
+	\begin{tabular}{lll}
+		P\up{r} &  & Président \\
+		P\up{r} &  &           \\
+		P\up{r} &  &           
+	\end{tabular} 
+}
+ 
+% ==================================================================
+% DÉDICACE
+\dedicate{A mes parents et mes frères \dots}
+ 
+% ==================================================================
+% DEBUT DE LA PRÉFACE
+\beforepreface
+ 
+% remerciements
+\include{remerciements}
+
+% Préface
+%\include{preface}
+
+% table des matières générale
+\tableofcontents
+ 
+% ==================================================================
+\afterpreface
+
+% ==================================================================
+% AVANT-PROPOS
+\include{intro}
+\adjustmtc
+ 
+% ==================================================================
+% CONTENU GÉNÉRAL
+% Introduction
+\include{chap1}
+% Matériels & Méthodes
+\include{chap2}
+% Résultats
+\include{chap3}
+% Discussions
+\include{chap4}
+ 
+% ==================================================================
+% CONCLUSION
+\include{conclusion}
+ 
+% ==================================================================
+% ANNEXES
+%\appendix
+%\include{annexe}
+
+% ==================================================================
+% LISTE DES FIGURES
+\listoffigures
+
+% ==================================================================
+% BIBLIOGRAPHIE
+\bibliographystyle{abbrv}
+\bibliography{bibliographie}
+
+% ==================================================================
+% NOTATIONS
+%\include{notation}
+ 
+% ==================================================================
+% COLOPHON
+\colophon{Ce document a été préparé à l'aide de l'éditeur de texte GNU
+  Emacs et du logiciel de composition typographique \LaTeXe.}
+ 
+% ==================================================================
+% COUVERTURE : RESUME ET MOTS-CLÉS
+\abstractpage
+ 
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
