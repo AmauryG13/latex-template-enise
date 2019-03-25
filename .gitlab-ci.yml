@@ -1,0 +1,18 @@
+image: blang/latex
+
+variables:
+  MAIN_FILE_NAME: 'sample'
+
+stages:
+  - compile
+
+compile:base:
+  allow_failure: false
+  stage: compile
+  script:
+    - pdflatex -synctex=1 -interaction=nonstopmode $MAIN_FILE_NAME.tex
+  artifacts:
+    when: on_success
+    expire_in: 5h
+    paths:
+      - $MAIN_FILE_NAME.pdf
