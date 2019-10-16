@@ -26,9 +26,9 @@ Those commands can be classified by theme :
 \parcours{} % Speciality of the diploma
 \encadrants{
   \begin{tabular}{lll}
-    Mr & {name} & Tuteur ENISE \\
-    Mr & {name} & Tuteur entreprise \\
-    Mr & {name} & Ingénieur neutre
+    Mr & {name} & Affiliation \\
+    Mr & {name} & Affiliation \\
+    Mr & {name} & Affiliation
   \end{tabular}
 } % Members of the jury
 ```
@@ -38,9 +38,9 @@ Those commands can be classified by theme :
 \soutenance{} % date of the defense
 \jury{
   \begin{tabular}{lll}
-    Mr & {name} & Tuteur ENISE \\
-    Mr & {name} & Tuteur entreprise \\
-    Mr & {name} & Ingénieur neutre
+    Mr & {name} & Affiliation \\
+    Mr & {name} & Affiliation \\
+    Mr & {name} & Affiliation
   \end{tabular}
 } % Members of the jury
 ```
