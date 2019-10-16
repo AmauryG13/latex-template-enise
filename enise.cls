@@ -3,7 +3,7 @@
 % 
 % Amaury GUILLERMIN
 %
-% Nécessite au moins un fichier de style pour la thèse
+% NÃ©cessite au moins un fichier de style pour la thÃ¨se
 % plus le fichier de style pour les pages administratives
 
 \NeedsTeXFormat{LaTeX2e}
@@ -40,9 +40,9 @@
 % ==========================================================================
 % PACKAGES STANDARD REQUIS
 
-% FONTS ET CARACTÈRES
+% FONTS ET CARACTÃˆRES
+\RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
-\RequirePackage[latin1]{inputenc}
 \RequirePackage[french]{babel}
 \frenchspacing
 \RequirePackage{eurosym}

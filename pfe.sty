@@ -11,9 +11,9 @@
 \RequirePackage[osf,sc]{mathpazo}
 \RequirePackage[scaled=.95]{helvet}
 \RequirePackage{courier}
-% Entêtes améliorés
+% EntÃªtes amÃ©liorÃ©s
 \RequirePackage{fancyhdr}
-% Enumerations personnalisée 
+% Enumerations personnalisÃ©e 
 \RequirePackage{enumerate}
 % Calcul des tailles d'environnement
 \RequirePackage{calc}
@@ -22,9 +22,9 @@
 \RequirePackage{dsfont,mathrsfs}
 % Lettrine
 \RequirePackage{lettrine}
-% Ajout d'entrées dans la table des matières
+% Ajout d'entrÃ©es dans la table des matiÃ¨res
 \RequirePackage{tocbibind}
-% Style de la légende
+% Style de la lÃ©gende
 \RequirePackage{caption}
 \DeclareCaptionLabelSeparator{mysep}{~--~}
 \captionsetup{singlelinecheck=no,labelsep=mysep,font=small,textfont=it}
@@ -34,7 +34,7 @@
 \RequirePackage{supertabular}
 % Mise en forme des algorithmes
 \RequirePackage[french,ruled,vlined]{algorithm2e}
-% Gestion améliorée de la bibliographie
+% Gestion amÃ©liorÃ©e de la bibliographie
 %\RequirePackage{natbib}
 %\bibliographystyle{abbrv}
 %\bibpunct{(}{)}{,}{a}{}{;}
@@ -42,7 +42,7 @@
 \RequirePackage{wrapfig}
 % Chargement de minitoc avant hyperref
 \RequirePackage[french]{minitoc}
-% Gestion des référence selon le format de sortie
+% Gestion des rÃ©fÃ©rence selon le format de sortie
 \RequirePackage{ifpdf}
 \ifpdf
 % configuration de graphicx et hyperref pour sortie PDF
@@ -68,7 +68,7 @@ pagebackref,
 plainpages=false]{hyperref}
 \fi
 \graphicspath{{./images/}}
-% Gestion éventuel des sommaires en début de chapitre
+% Gestion Ã©ventuel des sommaires en dÃ©but de chapitre
 \if@sommairechap
 \dominitoc
 \setlength{\mtcindent}{0em}
@@ -82,7 +82,7 @@ plainpages=false]{hyperref}
 \renewcommand{\cfttoctitlefont}{\Huge\scshape}
 \renewcommand{\cftloftitlefont}{\Huge\scshape}
 
-% CONFIGURATION DE LA CÉSURE
+% CONFIGURATION DE LA CÃ‰SURE
 \tolerance = 1414
 \hbadness = 1414
 \emergencystretch 1.5em
@@ -102,7 +102,7 @@ plainpages=false]{hyperref}
 \def\keywordsEN#1{\gdef\@keywordsEN{#1}}
 
 % Type de document
-\def\type{Rapport de Projet de Fin d'Études}
+\def\type{Rapport de Projet de Fin d'Ã‰tudes}
 \def\id#1{\gdef \@id{#1}}
 \def\@type{\type \space \MakeUppercase{\romannumeral \@id}}
 \def\datedebut#1{\gdef\@debut{#1}}
@@ -113,7 +113,7 @@ plainpages=false]{hyperref}
 \def\annee#1{\gdef\@annee{#1}}
 \def\promotion#1{\gdef\@promotion{#1}}
 
-% Université
+% UniversitÃ©
 \def\universite#1{\gdef\@universite{#1}}
 \def\uadresse#1{\gdef\@uadresse{#1}}
 
@@ -154,7 +154,7 @@ plainpages=false]{hyperref}
 		\Large \@universite \\
 		\large \@uadresse\\
 		
-		% Titre Centré
+		% Titre CentrÃ©
 		\vspace{\fill}
 		\large \@type \\
 		\large \@debut \space au \@fin \\
@@ -218,9 +218,9 @@ plainpages=false]{hyperref}
 	
 	\paragraph*{Titre}\@titleFR
 	
-	\paragraph*{Résumé}\@abstractFR
+	\paragraph*{RÃ©sumÃ©}\@abstractFR
 	
-	\paragraph*{Mots-clés}\@keywordsFR
+	\paragraph*{Mots-clÃ©s}\@keywordsFR
 	
 	\paragraph*{Title}\@titleEN
 	
@@ -240,8 +240,8 @@ plainpages=false]{hyperref}
 \addtolength{\headwidth}{\marginparwidth}
 
 % ==========================================================================
-% ENTÊTES
-% Entêtes standards
+% ENTÃŠTES
+% EntÃªtes standards
 
 \fancypagestyle{plain}{
 	\fancyhf{}
@@ -262,7 +262,7 @@ plainpages=false]{hyperref}
 }
 
 % ==============================================================
-% PRÉFACE 
+% PRÃ‰FACE 
 \newcommand{\beforepreface}{
 	\frontmatter
 	\pagestyle{empty}
@@ -272,7 +272,7 @@ plainpages=false]{hyperref}
 }
 
 % ==============================================================
-% CONTENU MAÎTRE
+% CONTENU MAÃŽTRE
 \newcommand{\afterpreface}{
 	\mainmatter
 	\pagestyle{main}
@@ -280,23 +280,23 @@ plainpages=false]{hyperref}
 
 % ---------------------------------------------------------------
 % PERSONNALISATION DE BABEL
-% redéfinition des noms chapitres spéciaux
+% redÃ©finition des noms chapitres spÃ©ciaux
 \addto{\captionsfrench}{
 	\renewcommand*{\listfigurename}{Liste des figures}
 	\renewcommand*{\appendixname}{}%
 }
-% noindent en début de section
+% noindent en dÃ©but de section
 %\addto\extrasfrench{\bbl@nonfrenchindent}
 
 % ==========================================================================
 % PAGE DE GARDE DES CHAPITRES
-% Le résumé + le minitoc éventuel
+% Le rÃ©sumÃ© + le minitoc Ã©ventuel
 \newenvironment{chapintro}{%
 	\if@sommairechap \nomtcrule \vspace{1.5cm} \minitoc[l] \fi}{%
 	\cleardoublepage
 }
 
-% chapitre numéroté
+% chapitre numÃ©rotÃ©
 \newfont{\chapterNumber}{eurb10 scaled 7000}
 \renewcommand*{\@makechapterhead}[1]{%
 	\thispagestyle{plain}
@@ -304,7 +304,7 @@ plainpages=false]{hyperref}
 	\begin{flushleft}\nobreak\Huge\sc#1\end{flushleft}
 	\vspace{3cm}
 }
-% chapitre non numéroté (*) 
+% chapitre non numÃ©rotÃ© (*) 
 \renewcommand*{\@makeschapterhead}[1]{%  
 	\markboth{#1}{#1}
 	\thispagestyle{plain}
@@ -355,7 +355,7 @@ plainpages=false]{hyperref}
 	(Cit\'e pages~#2.) 
 	\fi}
 
-% Page blanche après chapitre si nécessaire
+% Page blanche aprÃ¨s chapitre si nÃ©cessaire
 \makeatletter
 \def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
 	\hbox{}
@@ -389,18 +389,18 @@ plainpages=false]{hyperref}
 
 \addtolength{\thmmargin}{105pt}
 \addtolength{\thmmarginb}{\thmmargin-7.85ex} % exemple -- ok
-\addtolength{\thmmarginc}{\thmmargin-6.1ex} %  théorème,remarque -- ok
-\addtolength{\thmmargind}{\thmmargin-7.4ex} % propriété -- ok
-\addtolength{\thmmargine}{\thmmargin-6ex} % définition -- ok
-\addtolength{\thmmargina}{\thmmargin-5.625ex} % hypothèse -- ok
+\addtolength{\thmmarginc}{\thmmargin-6.1ex} %  thÃ©orÃ¨me,remarque -- ok
+\addtolength{\thmmargind}{\thmmargin-7.4ex} % propriÃ©tÃ© -- ok
+\addtolength{\thmmargine}{\thmmargin-6ex} % dÃ©finition -- ok
+\addtolength{\thmmargina}{\thmmargin-5.625ex} % hypothÃ¨se -- ok
 \addtolength{\thmmarginf}{\thmmargin-4.8ex} % proposition -- ok
 \addtolength{\thmmarging}{\thmmargin-8.7ex} % Lemme -- ok
 \addtolength{\thmmarginh}{\thmmargin-6.5ex} % Corollaire -- ok
 
 % COMMAND \newtheoremstyle
-% espace avant, espace après, font du corps, retrait titre, font titre, ponctuaiton après titre, espace intermot, option supp
+% espace avant, espace aprÃ¨s, font du corps, retrait titre, font titre, ponctuaiton aprÃ¨s titre, espace intermot, option supp
 
-% hypothèse
+% hypothÃ¨se
 \newtheoremstyle{thma}{9pt}{9pt}{\itshape}{-\thmmargina}{\small\bfseries}{\quad}{ }{}
 \theoremstyle{thma}
 \newtheorem{hypothese}{Hypoth\`{e}se}[chapter]
@@ -408,16 +408,16 @@ plainpages=false]{hyperref}
 \newtheoremstyle{thmb}{9pt}{9pt}{\itshape}{-\thmmarginb}{\small\bfseries}{\quad}{ }{}
 \theoremstyle{thmb}
 \newtheorem{exemple}{Exemple}[chapter]
-% théorème & remarque
+% thÃ©orÃ¨me & remarque
 \newtheoremstyle{thmc}{9pt}{9pt}{\itshape}{-\thmmarginc}{\small\bfseries}{\quad}{ }{}
 \theoremstyle{thmc}
 \newtheorem{theoreme}{Th\'{e}or\`{e}me}[chapter]
 \newtheorem{remarque}{Remarque}[chapter]
-% propriété
+% propriÃ©tÃ©
 \newtheoremstyle{thmd}{9pt}{9pt}{\itshape}{-\thmmargind}{\small\bfseries}{\quad}{ }{}
 \theoremstyle{thmd}
 \newtheorem{propriete}{Propri\'{e}t\'{e}}[chapter]
-% définition
+% dÃ©finition
 \newtheoremstyle{thme}{9pt}{9pt}{\itshape}{-\thmmargine}{\small\bfseries}{\quad}{ }{}
 \theoremstyle{thme}
 \newtheorem{definitionf}{D\'{e}finition}[chapter]
@@ -438,7 +438,7 @@ plainpages=false]{hyperref}
 % ==========================================================================
 % FIGURES ET TABLES 
 
-% \figScale{monfichier}{Légende de la figure}
+% \figScale{monfichier}{LÃ©gende de la figure}
 \newcommand{\figScaleX}[4]{
 	\begin{figure}[htp!]
 		\begin{#4}
